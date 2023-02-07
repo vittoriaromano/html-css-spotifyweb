@@ -21,7 +21,7 @@ ul *{
 /* header */
 header{
     background-color: rgba(0, 0, 0, 0.414);
-    height: 10vh;
+    min-height: 1.875rem;
     padding: 0.625rem;
     position: fixed;
     top: 0;
@@ -30,16 +30,18 @@ header{
 }
 .logo-small{
     width: 2.5rem;
+    height: 100%;
 }
-
-.logo-big{
+ .logo-big{
     display: none;
-    width: 7.5rem;
-}
+    width: 7.5rem; 
+    height: 100%;
+} 
+
 /* responsive */
 @media screen and (min-width: 640px){
     .logo-big{
-        display: block;
+        display: flex;
     }
     .logo-small{
         display: none;
@@ -65,8 +67,9 @@ header button{
     color: azure;
 }
 .menu{
+    width: 100%;
     position: relative;
-    top: 10vh;
+    top: 3.75rem;
     left: 0;
     overflow: scroll;
 }
@@ -85,22 +88,28 @@ header button{
     }
 }
 
-.second-cont{
-    height: 100vh;
-    width: 80%;
-    overflow: scroll;
-    background-color: #141922;
-    color: white;
+main .first-cont ul{
+    margin-bottom: 3.5rem;
 }
 main img{
     width: 2rem;
     
 }
 
-main li{
+main .menu li{
     align-items: center;
     
 }
+
+
+.second-cont{
+    height: 90vh;
+    width: 80%;
+    overflow: scroll;
+    background-color: #141922;
+    color: white;
+}
+
 
 
 
@@ -121,7 +130,7 @@ main li{
 /* footer */
 .footer-cont{
     background-color: #282828;
-    height: 15vh;
+    height: 4.6875rem;
     width: 100%;
     position: fixed;
     bottom: 0;
