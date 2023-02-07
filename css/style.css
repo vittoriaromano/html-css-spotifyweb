@@ -7,11 +7,17 @@
 }
 
 /* common */
-.flex{
+.space-between{
     display: flex;
     justify-content: space-between;
 }
+.flex{
+    display: flex;
+}
 
+ul *{
+    list-style: none;
+}
 /* header */
 header{
     background-color: rgba(0, 0, 0, 0.414);
@@ -23,12 +29,12 @@ header{
     right: 0;
 }
 .logo-small{
-    width: 5%;
+    width: 2.5rem;
 }
 
 .logo-big{
     display: none;
-    width: 10%;
+    width: 7.5rem;
 }
 /* responsive */
 @media screen and (min-width: 640px){
@@ -51,9 +57,32 @@ header button{
 /* main */
 
 .first-cont{
-    height: 100vh;
+    padding-left: 0.625rem;
+    height: 90vh;
+    overflow: hidden;
     width: 20%;
     background-color: black;
+    color: azure;
+}
+.menu{
+    position: relative;
+    top: 10vh;
+    left: 0;
+    overflow: scroll;
+}
+.menu ul li{
+    margin-bottom: .625rem;
+    margin-left: .3125rem;
+}
+
+.text{
+    display: none;
+}
+/* responsive */
+@media screen and (min-width: 640px){
+    .text{
+        display: block;
+    }
 }
 
 .second-cont{
@@ -61,12 +90,38 @@ header button{
     width: 80%;
     overflow: scroll;
     background-color: #141922;
+    color: white;
 }
+main img{
+    width: 2rem;
+    
+}
+
+main li{
+    align-items: center;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* footer */
 .footer-cont{
     background-color: #282828;
-    height: 10vh;
+    height: 15vh;
     width: 100%;
     position: fixed;
     bottom: 0;
