@@ -9,26 +9,47 @@
 /* common */
 .flex{
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
 }
 
 /* header */
 header{
     background-color: rgba(0, 0, 0, 0.414);
+    height: 10vh;
     padding: 0.625rem;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
 }
-header button{
+.logo-small{
+    width: 5%;
+}
 
+.logo-big{
+    display: none;
+    width: 10%;
+}
+/* responsive */
+@media screen and (min-width: 640px){
+    .logo-big{
+        display: block;
+    }
+    .logo-small{
+        display: none;
+    }    
+}
+
+header button{
+   background-color: transparent;
+   color: white;
+   border: 0.0625rem solid white;
+   border-radius: 35%;
+   padding: 0.925rem;
 }
 
 /* main */
-.first-cont img{
-    width: 7.5rem;
-}
+
 .first-cont{
     height: 100vh;
     width: 20%;
@@ -56,4 +77,3 @@ header button{
 
 
 
-/* responsive */
