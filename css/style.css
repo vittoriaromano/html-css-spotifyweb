@@ -6,7 +6,11 @@
     box-sizing: border-box;
 }
 
+
 /* common */
+.body{
+    height: 100vw;
+}
 .space-between{
     display: flex;
     justify-content: space-between;
@@ -18,7 +22,10 @@
 ul *{
     list-style: none;
 }
+
+
 /* header */
+
 header{
     background-color: rgba(0, 0, 0, 0.414);
     min-height: 1.875rem;
@@ -37,8 +44,16 @@ header{
     width: 7.5rem; 
     height: 100%;
 } 
+header button{
+    background-color: transparent;
+    color: white;
+    border: 0.0625rem solid white;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+ }
+ 
 
-/* responsive */
+/* responsive header */
 @media screen and (min-width: 640px){
     .logo-big{
         display: flex;
@@ -48,31 +63,29 @@ header{
     }    
 }
 
-header button{
-   background-color: transparent;
-   color: white;
-   border: 0.0625rem solid white;
-   border-radius: 35%;
-   padding: 0.925rem;
-}
+
 
 /* main */
+main{
+    height: calc(100vh - 4.6875rem) ;
+    overflow: scroll;
+}
 
+
+/* ****
+menu
+****** */
 .first-cont{
     padding-left: 0.625rem;
-    height: 90vh;
-    overflow: hidden;
     width: 20%;
-    background-color: black;
+    background-color: #000000;
     color: azure;
 }
 .menu{
     width: 100%;
-    position: relative;
-    top: 3.75rem;
-    left: 0;
-    overflow: scroll;
+    padding-top: 4.6875rem;
 }
+
 .menu ul li{
     margin-bottom: .625rem;
     margin-left: .3125rem;
@@ -81,19 +94,29 @@ header button{
 .text{
     display: none;
 }
+.playlist{
+    overflow: auto;
+ }
+ .user{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+ 
 /* responsive */
 @media screen and (min-width: 640px){
     .text{
         display: block;
     }
+   
 }
 
 main .first-cont ul{
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.25rem;
 }
 main img{
     width: 2rem;
-    
 }
 
 main .menu li{
@@ -102,14 +125,46 @@ main .menu li{
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *******************************************
+menu fine
+******************************************* */
+
+
+
 .second-cont{
-    height: 90vh;
+    padding-top:  4.6875rem;
+    height: calc(100vh - 4.6875rem);
     width: 80%;
     overflow: scroll;
     background-color: #141922;
     color: white;
 }
 
+.second-cont ul{
+    flex-wrap: wrap;
+    width: calc(100vh / 4);
+    margin: 1.25rem auto;
+}
+
+.second-cont ul li{
+    margin: 1.25rem auto;
+}
 
 
 
@@ -130,14 +185,80 @@ main .menu li{
 /* footer */
 .footer-cont{
     background-color: #282828;
+    color: white;
     height: 4.6875rem;
     width: 100%;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    padding: 1rem ;
+}
+
+.left-foot,
+.right-foot{
+    width: 25%;
+   
+}
+.footer-cont .flex{
+    gap: .9375rem;
+}
+.left-foot .flex{
+    justify-content: flex-start;
+}
+.center-foot{
+    width: 75%;
+    justify-content: space-between;
+}
+.center-foot >.flex{
+    justify-content: center;
+}
+.right-foot .flex{
+    justify-content: flex-end;
+}
+.img-footer{
+    width: 2.5rem;
+    height: 2.5rem;
 
 }
 
+.icone-footer{
+    font-size: 1.125rem;
+}
+ /* bars */
+.lunghezza{
+    margin: .3125rem;
+    padding: .125rem;
+    width: 8.375rem;
+    height: 1.25rem;
+    border: .0625rem solid white;
+    border-radius: 1.25rem;
+}
 
+.color{
+    background-color: aquamarine;
+    border-radius: 1.25rem;
+    width: 50%;
+    height: 100%;
+}
 
+.cerchio{
+    width: 1.25rem;
+    height:1.25rem ;
+    background-color: #282828d6;
+    border: .0625rem solid white;
+    border-radius: 50%;
+   position: relative;
+   right: 1.875rem;
+   bottom: .1875rem;
+}
+
+#volume{
+    width: 4.18rem ;
+}
+
+/* responsive */
+
+@media screen and (min-width: 970px){
+    .icone{
+        display: flex;
+        gap: .3125rem;
+    }
+   
+}

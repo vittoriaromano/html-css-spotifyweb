@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
-    <title>spotify chinese</title>
+    <title>spookify</title>
 </head>
 <body>
     <!-- header -->
@@ -17,10 +19,12 @@
     </header>
     <!--/ header -->
     <!-- main -->
-    <main class="flex">
+    <main class="flex ">
+        <!-- menu nav-->
         <div class="first-cont flex">
             <nav class="menu">
-                <ul>
+                <!-- prima lista -->
+                <ul class="home">
                     <li class="flex">
                         <img src="img/home.svg" alt="home">
                         <span class="text">Home</span>
@@ -34,13 +38,15 @@
                         <span class="text">Library</span>
                     </li>
                 </ul>
+                <!-- fine prima lista -->
+                <!-- seconda lista -->
                 <ul class="text">
                     <li>Playlist</li>
                     <li>
                         <span> +</span>
                         <span>Crea Playlist</span>
                     </li>
-                    <li>Nome Playlist</li>
+                    <li class="playlist">Nome Playlist</li>
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
@@ -48,27 +54,96 @@
                     <li>Nome Playlist</li>
                     <li>Nome Playlist</li>
                 </ul>
+                <!-- fine seconda lista -->
+                <!-- terza lista -->
 
-               <ul>
-                <li class="flex">
-                    <img src="img/download.svg" alt="home">
-                    <span class="text">Installa</span>
-                </li>
-                <hr class="text">
-                <li class="flex">
+               <ul class="user">
+                  <li class="flex">
+                     <img src="img/download.svg" alt="home">
+                     <span class="text">Installa</span>
+                  </li>
+                  <hr class="text">
+                  <li class="flex">
                     <img src="img/profile.svg" alt="home">
                     <span class="text">Jhon Cena</span>
-                </li>
+                  </li>
                </ul>
+               <!-- fine terza lista -->
                 
             </nav>
         </div>
+        <!-- fine menu nav -->
         <div class="second-cont">
+            <div>
+                <ul class="flex">
+                    <li>lista</li>
+                    <li>lista</li>
+                    <li>lista</li>
+                    <li>lista</li>
+                    <li>lista</li>
+                    <li>lista</li>
+                </ul>
+            </div>
         </div>
     </main>
     <!-- /main -->
     <footer>
-        <div class="footer-cont"></div>
+        <!-- brano -->
+        <div class="footer-cont flex">
+            <div class="left-foot">
+                <div class="flex">
+                      <img class="img-footer" src="img/sinister.jpeg" alt="brano">
+                      <div>
+                          <div>Titolo</div>
+                          <div>Brano Nome</div>
+                      </div>
+                
+                      <div class="icone">
+                          <i class="fa-regular fa-heart"></i>
+                          <i class="fa-regular fa-folder"></i>
+                      </div>
+                </div>
+                
+            </div>
+              <!-- play -->
+            <div class="center-foot">
+                <div class="flex">
+                    <div class="icone-footer"><i class="fa-solid fa-shuffle"></i></div>
+                    <div class="icone-footer"><i class="fa-solid fa-backward-step"></i></div>
+                    <div class="icone-footer"><i class="fa-regular fa-circle-play"></i></div>
+                    <div class="icone-footer"><i class="fa-solid fa-forward-step"></i></div>
+                    <div class="icone-footer"><i class="fa-solid fa-rotate-right"></i></div>
+                </div>
+                <div class="flex">
+                    <div>
+                        <div class="lunghezza flex">
+                            <div class="color"></div>
+                            <div class="cerchio"></div>
+                        </div>
+                    </div>
+                    
+                
+                </div>
+            </div>
+              <!-- volume -->
+            <div class="right-foot">
+                <div class="flex">
+                    <div class="icone-footer"><i class="fa-solid fa-list"></i></div>
+                    <div class="icone-footer"><i class="fa-solid fa-tv"></i></div>
+                    <div class="icone-footer"><i class="fa-solid fa-volume-high"></i></div>
+                    <div>
+                        <div>
+                            <div id="volume" class="lunghezza flex">
+                                <div class="color"></div>
+                                <div class="cerchio"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
     </footer>
 </body>
 </html>
