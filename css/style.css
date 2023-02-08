@@ -80,27 +80,37 @@ menu
     width: 20%;
     background-color: #000000;
     color: azure;
+    flex-direction: column;
+}
+nav{
+    height: 100%;
 }
 .menu{
-    width: 100%;
     padding-top: 4.6875rem;
+    border: 1px solid black;
 }
 
 .menu ul li{
     margin-bottom: .625rem;
     margin-left: .3125rem;
 }
+.musica{
+    flex-grow: 1;
+    border: 1px solid black;
 
+}
 .text{
     display: none;
+
 }
 .playlist{
-    overflow: auto;
+    max-height: 3.5rem;
+    overflow: scroll;
  }
  .user{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    margin-top: auto;
+    border: 1px solid black;
+    
     
 }
  
