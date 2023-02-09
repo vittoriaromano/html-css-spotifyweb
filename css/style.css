@@ -26,7 +26,19 @@ ul *{
 .padding{
     padding-left: 0.625rem;
 }
+.hover{
+    border-left: 2px solid rgba(0, 0, 0, 0.414);
+}
 
+.casa:hover .hover,
+.cerca:hover .hover,
+.libreria:hover .hover
+{
+    border-left: 1px solid rgb(26, 255, 0);
+}
+.second-cont .evidenza ul:hover .hover{
+    border-bottom: rgb(26, 255, 0);
+}
 
 /* header */
 
@@ -58,7 +70,7 @@ header button{
  
 
 /* responsive header */
-@media screen and (min-width: 640px){
+@media screen and (min-width: 552px){
     .logo-big{
         display: flex;
     }
@@ -241,7 +253,7 @@ main .second-cont img{
    
 }
 .footer-cont .flex{
-    gap: .9375rem;
+    gap: .125rem;
 }
 .left-foot .flex{
     justify-content: flex-start;
@@ -257,13 +269,15 @@ main .second-cont img{
     justify-content: flex-end;
 }
 .img-footer{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 1.25rem;
+    height: 1.25rem;
 
 }
-
+.titolonome{
+    font-size: .625rem;
+}
 .icone-footer{
-    font-size: 1.125rem;
+    font-size: .625rem;
 }
  /* bars */
 .lunghezza{
@@ -274,7 +288,9 @@ main .second-cont img{
     background-color: #404040;
     border-radius: 1.25rem;
 }
-
+.lunghezza-due{
+    width: 1.25rem;
+}
 .color{
     background-color:#959595;
     border-radius: 1.25rem;
@@ -292,10 +308,26 @@ main .second-cont img{
 
 /* responsive */
 
-@media screen and (min-width: 970px){
+@media screen and (min-width: 540px){
+    .footer-cont .flex{
+        gap: .9375rem;
+    }
+    
     .icone{
         display: flex;
         gap: .3125rem;
+    }
+    .icone-footer{
+        font-size: 1.125rem;
+    }
+
+    .img-footer{
+        width: 2.5rem;
+        height: 2.5rem;
+    
+    }
+    .titolonome{
+        font-size: 1rem;
     }
 
 }
