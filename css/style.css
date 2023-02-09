@@ -23,13 +23,17 @@ ul *{
     list-style: none;
 }
 
+.padding{
+    padding-left: 0.625rem;
+}
+
 
 /* header */
 
 header{
+    padding-top: 1.25rem;
     background-color: rgba(0, 0, 0, 0.414);
     min-height: 1.875rem;
-    padding: 0.625rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -49,7 +53,7 @@ header button{
     color: white;
     border: 0.0625rem solid white;
     border-radius: 1.25rem;
-    padding: 1.25rem;
+    padding: 1rem;
  }
  
 
@@ -68,7 +72,7 @@ header button{
 /* main */
 main{
     height: calc(100vh - 4.6875rem) ;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 
@@ -76,109 +80,151 @@ main{
 menu
 ****** */
 .first-cont{
-    padding-left: 0.625rem;
-    width: 20%;
+    width: 3.125rem;
     background-color: #000000;
     color: azure;
     flex-direction: column;
+   
 }
-nav{
-    height: 100%;
+
+@media screen and (min-width: 552px){
+    .first-cont{
+        width:14.375rem;
+    }
+    
 }
+
 .menu{
     padding-top: 4.6875rem;
-    border: 1px solid black;
+    width: 100%;
+    
 }
 
+main .first-cont ul{
+    margin-bottom: 2.25rem;
+}
 .menu ul li{
     margin-bottom: .625rem;
-    margin-left: .3125rem;
+    align-items: center;
+    
 }
-.musica{
-    flex-grow: 1;
-    border: 1px solid black;
-
+main .first-cont img{
+    width: 2rem; 
 }
-.text{
+.home{
     display: none;
-
 }
-.playlist{
-    max-height: 3.5rem;
-    overflow: scroll;
- }
- .user{
-    margin-top: auto;
-    border: 1px solid black;
-    
-    
-}
- 
-/* responsive */
-@media screen and (min-width: 640px){
-    .text{
-        display: block;
+@media screen and (min-width: 552px){
+    .home{
+        display:block;
+        
     }
    
 }
 
-main .first-cont ul{
-    margin-bottom: 1.25rem;
+.musica{
+    display: none;
+    overflow-y: hidden;
+    padding-bottom: .9375rem;
 }
-main img{
-    width: 2rem;
-}
-
-main .menu li{
-    align-items: center;
+.playlist{
+    flex-grow: 1;
+    overflow-y: auto;
+ }
+ .playlist li{
+    padding:.625rem 0 ;
+ }
+@media screen and (min-width: 552px){
+    .musica{
+        display: flex;
+        flex-direction: column;
+        
+    }
     
+     
+}
+
+#special{
+    color: #000000;
+    background-color: aliceblue;
+    margin-right: 1rem;
 }
 
 
+.user{
+    margin-top: auto;  
+}
+
+
+/* responsive */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* *******************************************
-menu fine
-******************************************* */
-
-
+/* ************
+photo musica
+************** */
 
 .second-cont{
     padding-top:  4.6875rem;
     height: calc(100vh - 4.6875rem);
-    width: 80%;
+    width: calc(100% - 3.125rem);
     overflow: scroll;
     background-color: #141922;
     color: white;
 }
 
-.second-cont ul{
+
+@media screen and(min-width:552px){
+    .second-cont{
+        width: calc(100% - 14.375rem);
+    }
+    
+}
+.second-cont .album {
+    margin-bottom: 4.5rem;
+
+}
+.second-cont .evidenza ul{
+    justify-content: center;
     flex-wrap: wrap;
-    width: calc(100vh / 4);
-    margin: 1.25rem auto;
-}
-
-.second-cont ul li{
+    gap: .9375rem;
     margin: 1.25rem auto;
 }
 
 
 
 
+/* boxex */
+main .second-cont img{
+    width: 100%;
+
+}
+
+.boxes{
+    flex-wrap: wrap;
+    gap: 1.25rem;
+   
+}
+
+.box{
+    width:calc(100% / 2 - 1.25rem);
+    text-align: center;
+    margin-top: 2.5rem;
+}
+.img-cerchio{
+    border-radius: 50%;
+}
+@media screen and (min-width: 680px){
+    .box{
+      width:calc(100% / 4 - 1.25rem); 
+    }
+}
+
+@media screen and (min-width: 880px){
+    .box{
+      width:calc(100% / 6 - 1.25rem); 
+    }
+}
 
 
 

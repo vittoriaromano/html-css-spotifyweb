@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- header -->
-    <header class="space-between">
+    <header class="space-between padding">
       <div class="logo-big"><img src="img/logo.svg" alt="logo"></div>
       <div class="logo-small"><img src="img/logo-small.svg" alt="logo"></div>
       <button>Effetua L'upgrade</button> 
@@ -21,23 +21,23 @@
     <!-- main -->
     <main class="flex ">
         <!-- menu nav-->
-        <div class="first-cont flex">
-            <nav>
+        <div class="first-cont flex padding">
+
              <!-- prima lista -->
 
             <div class="menu">
-                <ul class="home">
+                <ul>
                     <li class="flex">
                         <img src="img/home.svg" alt="home">
-                        <span class="text">Home</span>
+                        <span class="home">Home</span>
                     </li>
                     <li class="flex">
                         <img src="img/search.svg" alt="home">
-                        <span class="text">Search</span>
+                        <span class="home">Search</span>
                     </li>
                     <li class="flex">
                         <img src="img/libreria.svg" alt="home">
-                        <span class="text">Library</span>
+                        <span class="home">Library</span>
                     </li>
                 </ul>
 
@@ -45,23 +45,19 @@
             <!-- fine prima lista -->
             <!-- seconda lista -->
            
-            <div class="musica text">
-                <ul>
-                    <li>Playlist</li>
-                    <li>
-                        <span> +</span>
-                        <span>Crea Playlist</span>
-                    </li>
-                 <div class="playlist">
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                    <li>Nome Playlist</li>
-                </div>
-            </div>
+            <div class="musica">
+               <h3>Playlist</h3>
+               <span><span id="special"><i class="fa-solid fa-plus"></i></span>Aggiungi</span>
+               <ul class="playlist">
+                <li>playlist</li>
+                <li>playlist</li>
+                <li>playlist</li>
+                <li>playlist</li>
+                <li>playlist</li>
+                <li>playlist</li>
+                <li>playlist</li>
+               </ul>
+             </div>
                     
            
             <!-- fine seconda lista -->
@@ -70,31 +66,97 @@
                 <ul>
                     <li class="flex">
                        <img src="img/download.svg" alt="home">
-                       <span class="text">Installa</span>
+                       <span class="home">Installa</span>
                     </li>
-                    <hr class="text">
+                    <hr class="home">
                     <li class="flex">
                       <img src="img/profile.svg" alt="home">
-                      <span class="text">Jhon Cena</span>
+                      <span class="home">Jhon Cena</span>
                     </li>
                  </ul>
             </div>
                
                <!-- fine terza lista -->
-                
-            </nav>
         </div>
         <!-- fine menu nav -->
-        <div class="second-cont">
-            <div>
+        <div class="second-cont padding">
+            <div class="evidenza">
                 <ul class="flex">
-                    <li>lista</li>
-                    <li>lista</li>
-                    <li>lista</li>
-                    <li>lista</li>
-                    <li>lista</li>
-                    <li>lista</li>
+                    <li>IN EVIDENZA</li>
+                    <li>PODCAST</li>
+                    <li>CLASSIFICHE</li>
+                    <li>GENERI E MOOD</li>
+                    <li>NUOVE USCITE</li>
+                    <li>SCOPRI</li>
                 </ul>
+            </div>
+            <div class="album">
+                <h1>Recently played</h1>
+                <div class="boxes flex">
+                  <div class="box">
+                    <img src="img/sinister.jpeg" alt="brano">
+                    <h2>Album</h2>
+                    <div>Bell nome</div>
+                  </div>
+                  <div class="box">
+                    <img src="img/metal_lifting.jpg" alt="brano">
+                    <h2>Album</h2>
+                    <div>Bell nome</div>
+                  </div>
+                  <div class="box">
+                    <img src="img/stranger.jpeg" alt="brano">
+                    <h2>Album</h2>
+                    <div>Bell nome</div>
+                  </div>
+                  <div class="box">
+                    <img src="img/split.jpeg" alt="brano">
+                    <h2>Album</h2>
+                    <div>Bell nome</div>
+                  </div>
+                  <div class="box">
+                    <img src="img/cure.jpeg" alt="brano">
+                    <h2>Album</h2>
+                    <div>Bell nome</div>
+                  </div>
+                  <div class="box">
+                    <img src="img/sinister.jpeg" alt="brano">
+                    <h2>Album</h2>
+                    <div>Bell nome</div>
+                  </div>
+
+                </div>
+            </div>
+            <div class="album">
+                <h1>Recently played</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="boxes flex">
+                  <div class="box">
+                    <img src="img/radar.jpeg" alt="radar">
+                    <h2>Album</h2>
+                  </div>
+                  <div class="box">
+                    <img src="img/mixdaily.jpeg" alt="daily mix">
+                    <h2>Album</h2>
+                  </div>
+                </div>
+                
+    
+            </div>
+            <div class="album">
+                <h1>Recently played</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div class="boxes flex">
+                  <div class="box">
+                    <img class="img-cerchio" src="img/youg.jpeg" alt="radar">
+                    <h2>Album</h2>
+                  </div>
+                  <div class="box">
+                    <img class="img-cerchio" src="img/einaudi.jpeg" alt="daily mix">
+                    <h2>Album</h2>
+                  </div>
+                </div>
+                
+    
             </div>
         </div>
     </main>
