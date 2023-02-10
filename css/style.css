@@ -146,14 +146,14 @@ main .first-cont img{
  .playlist li{
     padding:.625rem 0 ;
  }
+
 @media screen and (min-width: 552px){
     .musica{
         display: flex;
         flex-direction: column;
         
     }
-    
-     
+
 }
 
 #special{
@@ -168,7 +168,6 @@ main .first-cont img{
 }
 
 
-/* responsive */
 
 
 
@@ -185,8 +184,15 @@ photo musica
     color: white;
 }
 
+.hover-list{
+    border-bottom: .0625rem solid #000000;
+}
 
-@media screen and(min-width:552px){
+.hover-list:hover {
+    border-bottom: .125rem solid green;
+}
+
+@media screen and (min-width:552px){
     .second-cont{
         width: calc(100% - 14.375rem);
     }
@@ -209,19 +215,20 @@ photo musica
 /* boxex */
 main .second-cont img{
     width: 100%;
-
 }
 
 .boxes{
     flex-wrap: wrap;
     gap: 1.25rem;
-   
 }
 
 .box{
     width:calc(100% / 2 - 1.25rem);
     text-align: center;
     margin-top: 2.5rem;
+}
+.box:hover .second-cont-img{
+    opacity: 0.5;
 }
 .img-cerchio{
     border-radius: 50%;
@@ -237,7 +244,21 @@ main .second-cont img{
       width:calc(100% / 6 - 1.25rem); 
     }
 }
-
+/* .play-cont{
+    position: absolute;
+    max-width:calc(100% / 2 - 1.25rem);
+    max-height: 6.25rem;
+    
+}
+.play{
+    position: relative;
+    top: 0rem;
+    bottom: 0rem;
+    left: 0rem;
+    right: 0rem;
+    margin: auto;
+    text-align: center; 
+} */
 /* footer */
 .footer-cont{
     background-color: #282828;
@@ -288,10 +309,12 @@ main .second-cont img{
     background-color: #404040;
     border-radius: 1.25rem;
 }
-.lunghezza-due{
+.lung-due{
     width: 1.25rem;
+    
 }
-.color{
+.color,
+.color-due{
     background-color:#959595;
     border-radius: 1.25rem;
     width: 50%;
@@ -302,13 +325,11 @@ main .second-cont img{
     align-items: center;
 }
 
-#volume{
-    width: 50% ;
-}
+
 
 /* responsive */
 
-@media screen and (min-width: 540px){
+@media screen and (min-width: 750px){
     .footer-cont .flex{
         gap: .9375rem;
     }
